@@ -1,0 +1,87 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Wrap everything nicely */
+#app {
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Title & description */
+#title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#description {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Table styling */
+.table-responsive {
+  margin: 0 auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ccc; /* ✅ visible border */
+  padding: 12px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #e0e0e0;
+}
+
+/* Pagination buttons */
+#buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  background-color: #000000;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+button.active {
+  background-color: #2196f3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
